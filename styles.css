@@ -99,31 +99,59 @@ footer {
     text-align: center;
 }
 
-/* Estilos para dispositivos móviles */
+/* Diseño para móviles */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         margin: 10px;
     }
 
-    .sidebar, .profile, main {
+    /* La barra lateral desaparece en móviles */
+    .sidebar {
+        display: none;
+    }
+
+    /* El main ocupa el 100% del ancho en móviles */
+    main {
         width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        text-align: center;
+        padding: 5px;
+    }
+
+    /* La galería se ajusta en móviles */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila */
+        gap: 5px;
     }
 
     .gallery img {
-        width: 100%; /* Las imágenes ocuparán el 100% del ancho disponible */
+        width: 100%;
+        height: auto;
     }
 
-    header {
-        padding: 20px 10px;
+    /* La sección de perfil también ocupa todo el ancho */
+    .profile {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
     }
 
-    h1 {
-        font-size: 1.5em;
+    .profile-image {
+        width: 60%; /* Hacemos la imagen de perfil más pequeña */
+        margin: 0 auto;
+    }
+    
+    /* Ajustamos los textos para que se vean más pequeños */
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .profile-info {
+        font-size: 14px;
     }
 }
-
 
