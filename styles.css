@@ -1,5 +1,3 @@
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -82,14 +80,14 @@ main {
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
-    gap: 15px; /* Espacio mayor entre imágenes */
+    gap: 15px;
     padding: 15px 0;
-    justify-content: center; /* Centra las imágenes */
+    justify-content: center;
 }
 
 .gallery-container img {
-    width: 400px; /* Incrementa el ancho de las imágenes */
-    height: 300px; /* Ajusta proporcionalmente la altura */
+    width: 400px; /* Mayor tamaño para escritorio */
+    height: 300px;
     object-fit: cover;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -125,11 +123,11 @@ footer {
     /* La galería se ajusta en móviles */
     .gallery {
         overflow-x: scroll;
-        gap: 10px; /* Espacio más pequeño en móviles */
+        gap: 10px;
     }
 
-    .gallery img {
-        width: 300px; /* Reduce el tamaño para pantallas más pequeñas */
+    .gallery-container img {
+        width: 300px; /* Tamaño más grande en móviles */
         height: 200px;
     }
 
@@ -141,11 +139,10 @@ footer {
     }
 
     .profile-image {
-        width: 60%;
+        width: 80%; /* Foto más grande en móviles */
         margin: 0 auto;
     }
-    
-    /* Ajustamos los textos para que se vean más pequeños */
+
     body {
         font-size: 16px;
     }
