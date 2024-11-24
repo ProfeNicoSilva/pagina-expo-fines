@@ -67,12 +67,9 @@ main {
 }
 
 .profile-image {
-    width: 150%; /* Duplica el tamaño original */
-    height: auto; /* Mantén las proporciones */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 0 auto; /* Centra la imagen */
-    display: block; /* Asegura que la imagen sea un bloque */
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-info {
