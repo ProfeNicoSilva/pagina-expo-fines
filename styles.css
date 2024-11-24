@@ -77,19 +77,22 @@ main {
 
 /* Galería de imágenes */
 .gallery {
+    overflow-x: auto;
+    white-space: nowrap;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 10px;
+    padding: 10px 0;
+    margin: 0 -10px; /* Ajusta los márgenes para alinearse con el contenido */
 }
 
-.gallery img {
-    width: 300px; /* Ajusta el tamaño de las imágenes */
-    height: auto;
-    margin: 10px;
-    object-fit: cover;
+.gallery-container img {
+    width: 300px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen al tamaño sin deformarla */
     border: 2px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
 }
 
 footer {
@@ -119,14 +122,13 @@ footer {
 
     /* La galería se ajusta en móviles */
     .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila */
+        overflow-x: scroll;
         gap: 5px;
     }
 
     .gallery img {
-        width: 100%;
-        height: auto;
+        width: 200px; /* Reduce el tamaño de las imágenes en móviles */
+        height: 150px; /* Ajusta la altura también */
     }
 
     /* La sección de perfil también ocupa todo el ancho */
