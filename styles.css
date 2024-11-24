@@ -80,9 +80,9 @@ main {
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
-    gap: 15px;
+    gap: 15px; /* Mayor espacio entre imágenes */
     padding: 15px 0;
-    justify-content: center;
+    justify-content: center; /* Centra las imágenes */
 }
 
 .gallery-container img {
@@ -123,12 +123,12 @@ footer {
     /* La galería se ajusta en móviles */
     .gallery {
         overflow-x: scroll;
-        gap: 10px;
+        gap: 15px; /* Mayor espacio entre imágenes en móviles */
     }
 
     .gallery-container img {
-        width: 300px; /* Tamaño más grande en móviles */
-        height: 200px;
+        width: 400px; /* Tamaño igual en móviles que en escritorio */
+        height: 300px;
     }
 
     /* La sección de perfil también ocupa todo el ancho */
@@ -138,8 +138,9 @@ footer {
         padding: 10px;
     }
 
+    /* Foto de perfil igual tamaño que en escritorio */
     .profile-image {
-        width: 80%; /* Foto más grande en móviles */
+        width: 100%; /* Sin cambios */
         margin: 0 auto;
     }
 
