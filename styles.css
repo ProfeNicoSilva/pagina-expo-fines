@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -65,9 +67,12 @@ main {
 }
 
 .profile-image {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150%; /* Duplica el tamaño original */
+    height: auto; /* Mantén las proporciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 0 auto; /* Centra la imagen */
+    display: block; /* Asegura que la imagen sea un bloque */
 }
 
 .profile-info {
@@ -80,19 +85,19 @@ main {
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
-    gap: 10px;
-    padding: 10px 0;
-    margin: 0 -10px; /* Ajusta los márgenes para alinearse con el contenido */
+    gap: 15px; /* Espacio mayor entre imágenes */
+    padding: 15px 0;
+    justify-content: center; /* Centra las imágenes */
 }
 
 .gallery-container img {
-    width: 300px; /* Ancho fijo */
-    height: 200px; /* Alto fijo */
-    object-fit: cover; /* Ajusta la imagen al tamaño sin deformarla */
+    width: 400px; /* Incrementa el ancho de las imágenes */
+    height: 300px; /* Ajusta proporcionalmente la altura */
+    object-fit: cover;
     border: 2px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+    flex-shrink: 0;
 }
 
 footer {
@@ -123,12 +128,12 @@ footer {
     /* La galería se ajusta en móviles */
     .gallery {
         overflow-x: scroll;
-        gap: 5px;
+        gap: 10px; /* Espacio más pequeño en móviles */
     }
 
     .gallery img {
-        width: 200px; /* Reduce el tamaño de las imágenes en móviles */
-        height: 150px; /* Ajusta la altura también */
+        width: 300px; /* Reduce el tamaño para pantallas más pequeñas */
+        height: 200px;
     }
 
     /* La sección de perfil también ocupa todo el ancho */
@@ -139,7 +144,7 @@ footer {
     }
 
     .profile-image {
-        width: 60%; /* Hacemos la imagen de perfil más pequeña */
+        width: 60%;
         margin: 0 auto;
     }
     
@@ -156,4 +161,3 @@ footer {
         font-size: 14px;
     }
 }
-
